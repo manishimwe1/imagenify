@@ -134,6 +134,10 @@ const TransformationForm = ({
 						router.push(
 							`/transformations/${newImage._id}`,
 						);
+						console.log(
+							imageData,
+							"here is image from db",
+						);
 					}
 				} catch (error) {
 					console.log(error);

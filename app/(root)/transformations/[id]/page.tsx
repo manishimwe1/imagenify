@@ -15,7 +15,7 @@ const ImageDetails = async ({
 	const { userId } = auth();
 
 	const image = await getImageById(id);
-	console.log(image);
+	console.log(image?.secureURL);
 
 	return (
 		<>
@@ -88,7 +88,7 @@ const ImageDetails = async ({
 							Original
 						</h3>
 
-						<Image
+						<img
 							width={getImageSize(
 								image.transformationType,
 								image,
